@@ -1,0 +1,22 @@
+.reg-modal{
+    background: url('../img/custom/model_back_1.png') left bottom no-repeat, 
+    #fff!important;
+}
+
+.login-modal{
+    background: url('../img/custom/model_back_2.png') right bottom no-repeat, 
+    #fff!important;
+}
+
+.doctor-model{
+    background: url('../img/custom/model_back_3.png') right bottom no-repeat,
+    #fff!important;
+}
+
+.forgotLink{
+    font-size: 12px;
+}
+
+.forgotLink:hover{
+    text-decoration: underline;
+}

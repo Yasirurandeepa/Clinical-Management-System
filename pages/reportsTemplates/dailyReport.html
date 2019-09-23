@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Report | Daily Income</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+
+    .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#0C9;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        box-shadow: 2px 2px 3px #999;
+        font-size: 20px;
+    }
+
+    .my-float{
+        margin-top:22px;
+    }
+
+    .float:hover, .my-float{
+        color: white;
+    }
+
+    .my-float:hover{
+        color: white;
+        cursor: pointer;
+    }
+
+
+</style>
+</head>
+<body>
+<a href="#" class="float" title="Download pdf" onclick="getPDFFileButton()">
+    <i class="fa fa-download my-float"></i>
+</a>
+        <div id="content" style="padding:15mm;">
+                <div >
+                    <center><img src="img/doc_logo.png" style="width: 170px"></center>
+                    <h1 style="text-align:center;margin-bottom: 0;margin-top: 0;">Daily Income Report</h1>
+                        <h4 style="text-align:center;margin-top: 0;">Kenway Medicals (pvt)Ltd.</h4>
+                        <hr>
+                        <br>
+                        <table style="font-family: arial, sans-serif;border-collapse: collapse;width: 70%;line-height: 25px;position: relative;margin: auto;">
+                                <tr>
+                                  <th style="text-align:left;">Date</th>
+                                  <th style="text-align:right;">Income (USD)</th>
+                                </tr>
+                            <tbody id="t-body">
+
+                            </tbody>
+
+                              </table>
+                </div>
+                <h1 style="text-align:center;margin-bottom: 0;margin-top: 50px">Daily income Chart</h1>
+                        <h4 style="text-align:center;margin-top: 0;">Kenway Medicals (pvt)Ltd.</h4>
+                        <hr>
+                        <canvas id="canvas" style="width:70%;position: relative;margin: auto;"></canvas>
+            <p style="margin-top:10px;width: 100%;text-align:center;position: relative;bottom:10px;">Kenway Medicals (pvt)Ltd. &copy;All Rights Reserved!</p>
+            </div>
+<script src="https://use.fontawesome.com/25ea4f9d66.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script type="text/javascript" src="js/dailyReport.js"></script>
+
+</body>
+
+</html>
